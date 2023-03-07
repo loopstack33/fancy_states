@@ -59,7 +59,7 @@ state: States.data
 
 ```dart
 FancyState(
-state: States.searc
+state: States.search
 ),
 ```
 
