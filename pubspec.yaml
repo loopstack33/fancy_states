@@ -1,6 +1,6 @@
 name: fancy_states
 description: Fancy Error States
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/loopstack33/fancy_states.git
 
 environment:
