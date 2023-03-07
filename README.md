@@ -1,39 +1,86 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# fancy_states
+[![Github stars](https://img.shields.io/github/stars/loopstack33/fancy_states?logo=github)](https://github.com/loopstack33/fancy_states)
+[![Pub Version](https://img.shields.io/pub/v/fancy_states?color=blue&logo=dart)](https://pub.dev/packages/fancy_states)
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+Fancy States is a flutter widget library, include different error states which are fully customizable and can be extended on request.
+No more extra hassle for all the extra working around with different states.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+## Installation
+1) Add this to your packages pubspec.yaml file:
+```yaml
+dependencies:
+  fancy_states: <latest version>
 ```
 
-## Additional information
+2) Install it
+   You can install it from the command line:
+```bash
+$ flutter pub get
+```
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+3) Import it
+   Now in Dart code, you can use:
+```dart
+import 'package:fancy_states/fancy_states.dart';
+```
+
+## Recommendation
+We recommend you to using the latest version.
+
+## Using
+
+You need to use just the following code:
+
+### Default Type
+
+```dart
+FancyState(
+state: States.internet   
+),
+```
+
+### Internet State
+
+```dart
+FancyState(
+state: States.internet
+),
+```
+
+### Data State
+
+```dart
+FancyState(
+state: States.data
+),
+```
+
+### Search State
+
+```dart
+FancyState(
+state: States.searc
+),
+```
+
+### Server State
+
+```dart
+FancyState(
+state: States.server
+),
+```
+
+### Customizable State
+
+```dart
+FancyState(
+state: States.internet,
+image:"path_to_image",
+title:"Your Title",
+description:"Your Description",
+imageHeight:100,
+titleStyle: const TextStyle(fontFamily: 'Futura',fontSize: 16,fontWeight: FontWeight.w600,color: Colors.black),
+descriptionStyle: const  TextStyle(fontFamily: 'Futura',fontSize: 12,fontWeight: FontWeight.w300,color: Color(0xFF8F8E8E),
+),
+```
