@@ -24,8 +24,8 @@ $ flutter pub get
 import 'package:fancy_states/fancy_states.dart';
 ```
 
-## Recommendation
-We recommend you to using the latest version.
+## Screenshot
+<img src="https://user-images.githubusercontent.com/99548269/223346040-c24ce6bc-7845-46c5-8703-6f4af617c786.png" align="center" style="width: 100%" />
 
 ## Using
 
